@@ -28,6 +28,7 @@ export const loader = async ({request}: LoaderFunctionArgs) => {
       headers: {
         "Content-Type": "image/png",
         "Access-Control-Allow-Origin": "*",
+        "Cache-Control": "max-age=300, s-maxage=3600",
       },
     });
   } catch (e) {
