@@ -27,6 +27,7 @@ export const loader = async ({request}: LoaderFunctionArgs) => {
     return new Response(resizedImage, {
       headers: {
         "Content-Type": "image/png",
+        "Access-Control-Allow-Origin": "*",
       },
     });
   } catch (e) {
